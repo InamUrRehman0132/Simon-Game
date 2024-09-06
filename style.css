@@ -1,0 +1,63 @@
+/* General Styles */
+body {
+    text-align: center;
+}
+
+.btn_container {
+    display: flex;
+    justify-content: center;
+}
+
+.btn {
+    height: 100px;
+    width: 100px;
+    border-radius: 20%;
+    border: 5px solid black;
+    margin: 2rem;
+}
+
+/* Button Colors */
+.yellow {
+    background-color: #f99b45;
+}
+
+.green {
+    background-color: #63aac0;
+}
+
+.purple {
+    background-color: #819ff9;
+}
+
+.red {
+    background-color: #d95980;
+}
+
+/* Flash Effects */
+.flash {
+    background-color: white;
+}
+
+.userflash {
+    background-color: green;
+}
+
+/* Waiting and Game Over Indicators */
+.waiting h2 {
+    color: #ff0000; /* Change color to indicate waiting status */
+    font-weight: bold;
+    animation: flash 1s infinite; /* Flash animation */
+}
+
+.game-over h2 {
+    color: #ff0000; /* Change color to indicate game over */
+    font-weight: bold;
+    animation: flash 1s infinite; /* Flash animation */
+}
+
+/* Flash Animation */
+@keyframes flash {
+    0% { opacity: 1; }
+    50% { opacity: 0.5; }
+    100% { opacity: 1; }
+}
